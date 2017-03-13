@@ -1,5 +1,3 @@
-alias Converge.Util
-
 defmodule RoleRadeon do
 	def role(_tags \\ []) do
 		%{
