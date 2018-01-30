@@ -11,6 +11,8 @@ defmodule RoleRadeon do
 				"xserver-xorg-video-radeon",
 				# Steam needs this on Radeon even with STEAM_RUNTIME enabled
 				"libgl1-mesa-glx:i386",
+				# For --hwdec=vdpau in mpv
+				"vdpau-driver-all",
 			],
 			post_install_unit: %All{units: [
 				conf_dir("/etc/X11"),
