@@ -11,6 +11,8 @@ defmodule RoleRadeon do
 				"xserver-xorg-video-radeon",
 				# Steam needs this on Radeon even with STEAM_RUNTIME enabled
 				"libgl1-mesa-glx:i386",
+				# 32-bit Windows games need this
+				"libgl1-mesa-dri:i386",
 				# For --hwdec=vdpau in mpv
 				"vdpau-driver-all",
 			],
