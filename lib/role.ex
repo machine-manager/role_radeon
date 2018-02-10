@@ -9,9 +9,9 @@ defmodule RoleRadeon do
 			desired_packages: [
 				"firmware-amd-graphics",
 				"xserver-xorg-video-radeon",
-				# Steam needs this on Radeon even with STEAM_RUNTIME enabled
+				# For Steam, which needs this on Radeon even with STEAM_RUNTIME enabled
 				"libgl1-mesa-glx:i386",
-				# 32-bit Windows games need this
+				# For 32-bit Windows games
 				"libgl1-mesa-dri:i386",
 				# For --hwdec=vdpau in mpv
 				"vdpau-driver-all",
